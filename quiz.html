@@ -25,15 +25,16 @@
       $(".btn-right").click(function() {
         $(".correct-msg").slideDown();
         $(".wrong-msg").hide();
+        $(".btn").removeClass("active");
+        $(this).addClass("active");
       });
       $(".btn-wrong").click(function() {
         $(".wrong-msg").slideDown();
         $(".correct-msg").hide();
-      });
-      $("a").click(".btn", function() {
+        $(".btn").removeClass("active");
         $(this).addClass("active");
       });
-      
+
   </script>
 </body>
 </html>
